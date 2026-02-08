@@ -1,0 +1,187 @@
+/* ============================================
+   CANVAS THEMES
+   These styles will be injected into Canvas
+   ============================================ */
+
+/* ============================================
+   BASE IMPROVEMENTS (Always Applied)
+   ============================================ */
+
+.canvas-theme-base {
+  /* Smoother fonts */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.canvas-theme-base * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better typography */
+.canvas-theme-base body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif !important;
+}
+
+/* Smooth transitions */
+.canvas-theme-base a,
+.canvas-theme-base button,
+.canvas-theme-base .btn {
+  transition: all 0.2s ease !important;
+}
+
+/* Modern course cards */
+.canvas-theme-base .ic-DashboardCard {
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+
+.canvas-theme-base .ic-DashboardCard:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Better buttons */
+.canvas-theme-base .btn,
+.canvas-theme-base .Button {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+
+.canvas-theme-light {
+  /* Already Canvas's default - just improvements */
+}
+
+/* ============================================
+   DARK THEME
+   ============================================ */
+
+.canvas-theme-dark {
+  --dark-bg-primary: #1a1a1a;
+  --dark-bg-secondary: #242424;
+  --dark-bg-tertiary: #2e2e2e;
+  --dark-text-primary: #e0e0e0;
+  --dark-text-secondary: #b0b0b0;
+  --dark-border: #3a3a3a;
+  --dark-accent: #4a9eff;
+}
+
+.canvas-theme-dark body {
+  background-color: var(--dark-bg-primary) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+.canvas-theme-dark #header {
+  background-color: var(--dark-bg-secondary) !important;
+  border-bottom: 1px solid var(--dark-border) !important;
+}
+
+.canvas-theme-dark .ic-DashboardCard {
+  background-color: var(--dark-bg-secondary) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+.canvas-theme-dark .ic-DashboardCard__header-title {
+  color: var(--dark-text-primary) !important;
+}
+
+.canvas-theme-dark #content {
+  background-color: var(--dark-bg-primary) !important;
+}
+
+.canvas-theme-dark h1, 
+.canvas-theme-dark h2, 
+.canvas-theme-dark h3 {
+  color: var(--dark-text-primary) !important;
+}
+
+.canvas-theme-dark a {
+  color: var(--dark-accent) !important;
+}
+
+.canvas-theme-dark .btn-primary {
+  background-color: var(--dark-accent) !important;
+}
+
+/* ============================================
+   OCEAN THEME
+   ============================================ */
+
+.canvas-theme-ocean {
+  --ocean-primary: #006d77;
+  --ocean-secondary: #83c5be;
+  --ocean-bg: #edf6f9;
+  --ocean-accent: #00a8cc;
+}
+
+.canvas-theme-ocean body {
+  background-color: var(--ocean-bg) !important;
+}
+
+.canvas-theme-ocean #header {
+  background: linear-gradient(135deg, #006d77 0%, #00a8cc 100%) !important;
+  color: white !important;
+}
+
+.canvas-theme-ocean .ic-DashboardCard {
+  background: white !important;
+  border: 2px solid var(--ocean-secondary) !important;
+}
+
+.canvas-theme-ocean .ic-DashboardCard:hover {
+  border-color: var(--ocean-primary) !important;
+}
+
+.canvas-theme-ocean .btn-primary {
+  background: var(--ocean-primary) !important;
+  border: none !important;
+}
+
+.canvas-theme-ocean a {
+  color: var(--ocean-accent) !important;
+}
+
+/* ============================================
+   FOREST THEME
+   ============================================ */
+
+.canvas-theme-forest {
+  --forest-primary: #2d6a4f;
+  --forest-secondary: #52b788;
+  --forest-bg: #f1faee;
+  --forest-accent: #40916c;
+}
+
+.canvas-theme-forest body {
+  background-color: var(--forest-bg) !important;
+}
+
+.canvas-theme-forest #header {
+  background: linear-gradient(135deg, #2d6a4f 0%, #52b788 100%) !important;
+  color: white !important;
+}
+
+.canvas-theme-forest .ic-DashboardCard {
+  background: white !important;
+  border: 2px solid var(--forest-secondary) !important;
+}
+
+.canvas-theme-forest .ic-DashboardCard:hover {
+  border-color: var(--forest-primary) !important;
+}
+
+.canvas-theme-forest .btn-primary {
+  background: var(--forest-primary) !important;
+  border: none !important;
+}
+
+.canvas-theme-forest a {
+  color: var(--forest-accent) !important;
+}

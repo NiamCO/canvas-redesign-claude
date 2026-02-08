@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Redesign</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/themes.css">
+</head>
+<body>
+  <!-- Theme Control Panel -->
+  <div id="control-panel" class="control-panel">
+    <div class="panel-header">
+      <div class="logo">
+        <span class="logo-icon">🎨</span>
+        <span class="logo-text">Canvas Redesign</span>
+      </div>
+      <button id="toggle-panel" class="toggle-btn">
+        <span>⚙️</span>
+      </button>
+    </div>
+
+    <div class="panel-content">
+      <!-- Theme Selector -->
+      <div class="control-section">
+        <h3>🌓 Theme</h3>
+        <div class="theme-buttons">
+          <button class="theme-btn active" data-theme="light">
+            ☀️ Light
+          </button>
+          <button class="theme-btn" data-theme="dark">
+            🌙 Dark
+          </button>
+          <button class="theme-btn" data-theme="ocean">
+            🌊 Ocean
+          </button>
+          <button class="theme-btn" data-theme="forest">
+            🌲 Forest
+          </button>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="control-section">
+        <h3>⚡ Features</h3>
+        <label class="toggle-control">
+          <input type="checkbox" id="modernUI" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Modern UI</span>
+        </label>
+        <label class="toggle-control">
+          <input type="checkbox" id="betterFonts" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Better Typography</span>
+        </label>
+        <label class="toggle-control">
+          <input type="checkbox" id="smoothAnimations" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Smooth Animations</span>
+        </label>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="control-section">
+        <h3>🚀 Quick Actions</h3>
+        <button class="action-btn" id="openCanvas">
+          <span>🔗</span>
+          Open Canvas Directly
+        </button>
+        <button class="action-btn" id="resetSettings">
+          <span>🔄</span>
+          Reset Settings
+        </button>
+      </div>
+
+      <!-- Info -->
+      <div class="control-section info">
+        <p>⚠️ <strong>Note:</strong> Due to browser security (CORS), Canvas can't be embedded in an iframe.</p>
+        <p>Click "Open Canvas Directly" to open Canvas in a new tab with a bookmarklet that applies these styles!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div id="main-content" class="main-content">
+    <div class="welcome-screen">
+      <div class="welcome-content">
+        <h1>🎨 Welcome to Canvas Redesign</h1>
+        <p class="subtitle">A beautiful, modern redesign for Canvas LMS</p>
+        
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🌓</div>
+            <h3>Dark Mode</h3>
+            <p>Multiple beautiful themes including dark mode for late-night studying</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Modern UI</h3>
+            <p>Clean, professional design with smooth animations</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast & Simple</h3>
+            <p>Lightweight and easy to use with no installation required</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Privacy First</h3>
+            <p>All settings stored locally on your device</p>
+          </div>
+        </div>
+
+        <div class="getting-started">
+          <h2>🚀 How to Use</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Choose Your Theme</h4>
+                <p>Select from Light, Dark, Ocean, or Forest themes using the panel on the left</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Create a Bookmarklet</h4>
+                <p>Drag the button below to your bookmarks bar</p>
+                <div class="bookmarklet-container">
+                  <a href="javascript:void(0)" id="bookmarklet" class="bookmarklet-btn" draggable="true">
+                    📌 Canvas Redesign
+                  </a>
+                  <p class="bookmarklet-help">← Drag this to your bookmarks bar!</p>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Use on Canvas</h4>
+                <p>Go to Canvas, then click the bookmark to apply your theme!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alternative-method">
+          <h3>💡 Alternative Method (Copy & Paste)</h3>
+          <p>If you can't drag bookmarks, copy this code and paste it into your browser console (F12) when on Canvas:</p>
+          <div class="code-container">
+            <button class="copy-btn" id="copyCode">Copy Code</button>
+            <pre id="injectionCode"><code>// Code will be generated based on your theme selection</code></pre>
+          </div>
+        </div>
+
+        <div class="note">
+          <p><strong>Note for school computers:</strong> This method doesn't require installing anything! It's just a bookmark that applies custom CSS to Canvas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
